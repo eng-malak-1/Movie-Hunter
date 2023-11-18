@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+h2{
+    margin-left: 2rem;
+}
+
+
+ul{
+    margin-left: 26rem;
+}
+
+.btn{
+    margin-left: 2rem;
+}
+
+.search{
+    margin-left: 2rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+

@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.home{
+    background-color: rgb(35, 34, 34);
+    height: 100vh;
+}
+
+/* Home section */
+
+.main-img{
+    width: 90%;
+    height: 85vh;
+    margin-top: 5rem;
+    margin-left: 4.5rem;
+    border-radius: 8px;
+}
+
+
+.content{
+    display: flex;
+    margin-top: -10rem;
+}
+
+.content .text{
+    color: white;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+
+.content .play i{
+    color: red;
+    font-size: 4rem;
+    margin-left: 38rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: absolute;
+    display: flex !important;
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        box-shadow: 0 0 0 10px rgba(201, 3, 3, 0.502);
+    }
+    40%{
+        box-shadow: 0 0 0 20px rgba(154, 1, 1, 0.436);
+    }
+    80%{
+        box-shadow: 0 0 0 30px rgba(104, 1, 1, 0.415);
+    }
+    100%{
+        box-shadow: 0 0 0 40px rgba(154, 1, 1, 0.258);
+    }
+
+}
+
+.content .play i:hover{
+    color: rgb(202, 7, 7);
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+.content i{
+    color: yellow;
+    font-size: 1.3rem;
+}
+
+.content .stars{
+    position: absolute;
+    margin-left: 14.9rem;
+    margin-top: 3.5rem;
+}
+.content .stars-full{
+    position: absolute;
+    margin-left: 14.9rem;
+    margin-top: 3.5rem;
+    display: none;
+}
+
+.content .stars-full .active{
+    display: block;
+}
+
+
+@media screen  and (max-width:768px){
+    .main-img{
+        width: 95%;
+        height: 80vh;
+        margin-left: -0.01rem;
+        margin-left: 1rem;
+    }
+
+    .content .text{
+        margin-left: 4rem;
+        margin-top: 3.4rem;
+    }
+
+    .content .stars , .stars-full{
+        margin-top: 5rem;
+        margin-left: 11rem;
+    }
+
+    .content .play i{
+        margin-left: -1rem;
+        margin-left:35rem ;
+    }
+}
+
+
+/*             mobile screen                    */
+
+
+
+@media screen  and (max-width:400px){
+    .main-img , .content {
+        display: none;
+    }
+}
+
+
+@media screen  and ( max-width:850px) {
+    .main-img{
+        margin-left: -1rem;
+        margin-left: 1rem;
+        width: 97%;
+    }
+
+    .content .text{
+        margin-left: 4rem;
+    }
+
+    .content .stars , .stars-full{
+        margin-left: 11.3rem;
+    }
+
+    .play{
+        margin-left: -15rem;
+    }
+}

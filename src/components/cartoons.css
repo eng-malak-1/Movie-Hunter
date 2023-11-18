@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.cartoons{
+    background-color: rgb(35, 34, 34);
+    margin-top: -7%;
+}
+
+
+.title{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    position: relative;
+}
+
+.title::after{ 
+    position: absolute;
+    content: '';
+    background-color:red;
+    width: 9rem;
+    height: 1px;
+    top: 3.5rem;
+    left: 0.6rem;
+    margin-top: -0.3rem;
+}
+
+
+@media screen  and (max-width:768px){
+    .cartoons{
+        margin-top: -5rem;
+    }
+}
+
+/* mobile view */
+
+@media screen  and ( max-width:850px) {
+
+    .cartoons{
+        margin-top: -5rem;
+        padding-top: 3rem;
+    }
+
+    .title{
+        margin-left: 3rem ;
+    }
+
+}
+
+
+
+
+
+@media screen  and (max-width:400px){
+    .cartoons{
+        padding-top: 3rem;
+    }
+
+    .title::after{
+        width: 6rem;
+        margin-top: -1rem;
+    }
+}

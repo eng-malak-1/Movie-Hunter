@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.news , .soon{
+    background-color: rgb(35, 34, 34);
+    margin-top: -6%;
+}
+
+.titleee{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    position: relative;
+}
+
+.titleee::after{ 
+    position: absolute;
+    content: '';
+    background-color:red;
+    width: 5rem;
+    height: 1px;
+    top: 3.5rem;
+    left: 0.6rem;
+    margin-top: -0.3rem;
+}
+
+
+/* coming soon section */
+
+.tittle{
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.tittle::after{ 
+    position: absolute;
+    content: '';
+    background-color:red;
+    width: 14rem;
+    height: 1px;
+    top: 3.5rem;
+    left: 0.6rem;
+    margin-top: -0.1rem;
+}
+
+.soon{
+    margin-top: -9rem;
+    padding-left:4rem ;
+    padding-top: 12rem;
+    display: grid;
+    grid-template-columns:repeat(5, 250px);
+}
+
+.api-img{
+    margin-top: 10rem;
+    width: 220px;
+    margin-left: 50rem; 
+    
+}
+
+
+.api-title{
+    padding-left: 1rem;
+}
+
+
+
+@media screen  and (max-width:768px){
+    .news{
+        margin-top: -5rem;
+    }
+}
+
+
+/* mobile view */
+
+
+@media screen  and (max-width:400px){
+    .news{
+        padding-top: 3rem;
+    }
+
+    .titleee{
+        margin-left: 7rem;
+    }
+
+    .titleee::after{
+        width: 4rem ;
+        left: 0.2rem;
+        margin-top: -1rem;
+    }
+
+/* coming soon*/
+
+    .soon{
+        grid-template-columns: repeat(2, 140px);
+        padding-left: 0.5rem;
+        background-color: rgb(35, 34, 34);
+    }
+
+    .api-img{
+        object-fit: contain;
+        width: 6rem;
+    }
+
+    .tittle{
+        margin-left: 4rem;
+    }
+
+    .tittle::after{
+        width: 9rem;
+    }
+}
+
+/*                                        */
+
+
+@media screen  and ( max-width:850px) {
+
+    .news{
+        margin-top: -5rem;
+        padding-top: 3rem;
+    }
+
+    .titleee{
+        margin-left: 3rem ;
+    }
+
+    .soon{
+        grid-template-columns:repeat(4, 202px);
+        padding-left: 0.5rem;
+    }
+
+    .soon img{
+        width: 190px;
+    }
+
+    .tittle{
+        margin-left: 3rem;
+    }
+}
+
+/*                                         */
+
+
+@media screen  and (max-width:580px) {
+    .soon{
+        grid-template-columns:repeat(2, 250px) ;
+        padding-left: 2rem;
+    }
+
+    .tittle{
+        margin-left: 4rem;
+    }
+
+    .tittle::after{
+        width: 10rem;
+    }
+}

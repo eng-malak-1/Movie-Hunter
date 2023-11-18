@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden ;
+}
+
+.movies{
+    background-color: rgb(35, 34, 34);
+    margin-top: -6%;
+}
+
+
+
+
+.titlee{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    position: relative;
+}
+
+.titlee::after{ 
+    position: absolute;
+    content: '';
+    background-color:red;
+    width: 7rem;
+    height: 1px;
+    top: 3.5rem;
+    left: 0.6rem;
+    margin-top: -0.3rem;
+}
+
+.images{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns:repeat(5, 245px);
+
+}
+
+.images .cards{
+    margin-left: 5rem;
+}
+
+.images .cards img{
+    width: 220px;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+
+
+
+
+/* single images edit */
+
+.images .cards .stealing{
+    height: 75%;
+}
+
+.images .cards .italian{
+    width: 225px;
+    height: 73%;
+}
+.images .cards .escape{
+
+    height: 75%;
+}
+
+/* End  single images edit */
+
+
+
+.images .cards .text{
+    color: white;
+}
+
+.images .cards h6 {
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: 9rem;
+    color: rgb(152, 151, 151);
+}
+
+.images .cards .type{
+    margin-left: 10rem;
+}
+
+.play-btn{
+    position: absolute;
+    color: red;
+    margin-top: -3.8rem;
+    margin-left:11.3rem;
+    font-size: 2.5rem;
+}
+
+.images .cards .stars{
+    position: absolute;
+    color: yellow;
+    margin-left: 8rem;
+    margin-top: -2.5rem;
+}
+.images .cards .stars-full{
+    position: absolute;
+    color: yellow;
+    margin-left: 8rem;
+    margin-top: -2.5rem;
+    display: none;
+}
+
+
+/* 
+#one {
+    display: none;
+}
+
+#one {
+    display: block;
+} */
+
+
+
+/*                  tablet screen          */
+
+@media screen  and ( max-width:768px) {
+
+    
+    .movies {
+        margin-top: -5rem;
+    }
+
+    .images{
+        grid-template-columns:repeat(3, 245px);
+
+    }
+    .images .cards img{
+        width: 215px;
+        margin-left: -3.9rem;
+    }
+
+
+    .images .cards .text{
+        margin-left: -3.5rem;
+        margin-top: 1rem;
+    }
+
+    .images .cards .type{
+        margin-left: 5rem;
+        margin-top: 3rem;
+    }
+
+    .images .cards .stars , .stars-full{
+        margin-left: 2rem;
+    }
+
+    .play-btn{
+        font-size: 2rem;
+        margin-left: 7rem;
+    }
+
+
+}
+
+
+/*            mobile screen              */
+
+
+@media screen  and ( max-width:400px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .movies {
+        margin-top: -40rem;
+    }
+
+    .images{
+        margin-top: 2.5rem;
+        grid-template-columns:repeat(2, 140px);
+    }
+
+    .images .cards img{
+        object-fit: contain;
+        width: 7rem;
+        margin-top: 1rem ;
+    }
+
+    .titlee{
+        margin-left: 6rem;
+    }
+
+    .titlee::after{
+        width: 5rem;
+        left: 0.4rem;
+    }
+
+    .images .cards .text{
+        margin-left: -3.5rem;
+        margin-top: -1rem;
+    }
+
+    .images .cards .text h4{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .images .cards .text h6{
+        font-size: 0.7rem;
+        margin-left: 3rem;
+        margin-top: 0.01rem ;
+    }
+    
+    .images .cards .text p{
+        font-size: 0.6rem;
+
+    }
+
+
+
+
+    .images .cards .stars , .stars-full{
+        display: none;
+    }
+
+
+    .play-btn{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+}
+/*                                            */
+
+@media screen  and ( max-width:850px) {
+
+    .movies{
+        margin-top: -5rem;
+        padding-top: 3rem;
+    }
+
+    .images{
+        margin-top: 2.5rem;
+        grid-template-columns:repeat(4, 202px);
+        margin-left: -4rem;
+    }
+
+    .images .cards img{
+        width: 190px;
+    }
+
+    .play-btn{
+        font-size: 2rem;
+        margin-left: 9rem;
+    }
+
+    .titlee{
+        margin-left: 3rem;
+    }
+
+    .images .cards h4{
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    .images .cards h6{
+        font-size: 1rem;
+        margin-top: -1rem;
+        margin-left: 7rem;
+    }
+    
+
+    .images .cards .stars , .stars-full{
+        margin-left: 6rem;
+    }
+}
+
+
+
+/*                                       */
+
+@media screen  and ( max-width:580px) {
+    .images{
+        margin-top: 2.5rem;
+        grid-template-columns:repeat(2, 250px);
+        margin-left: 2rem;
+    }
+
+    .images .cards img{
+        width: 220px;
+    }
+    
+    .play-btn{
+        margin-left:7rem;
+    }
+
+   
+}
+
+
+
